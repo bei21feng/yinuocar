@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预约检测</title>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/public_title.js"></script>
+    <script src="js/detection.js"></script>
+	<script type="text/javascript" src="js/online_consult.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style-font.css"/>
+    <link href="css/public_title.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style-footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/public_footer.css"/>
+    <link rel="stylesheet" href="css/detection.css">
+	<link rel="stylesheet" type="text/css" href="css/online_consult.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+
+<body>
+    <header>
+        <div id="index_title">
+        	<div id="title_logo"><img src="img\img-公共\logo.png" /></div>
+        	<div id="top-nav">
+        		<ul>
+        			<li class="no_active"><a href="index.html">首页</a></li>
+        			<li class="active"><a href="detection.html">预约检测</a></li>
+        			<li class="no_active"><a href="organization.html">企业动态</a></li>
+        			<li class="no_active"><a href="about_us.html">关于一诺</a></li>
+        		</ul>
+        	</div>
+        	<div id="wechat_logo">
+        		<img src="img/img-公共/icon_wechat.png" />
+        		<div id="wechat_QRCode">
+        			<img src="img/img-公共/code.jpg" />
+        		</div>
+        		</div>
+        	<div id="title_phonenumber"><img src="img/img-公共/tel.png" /></div>
+        	<div id="title_login"><img src="img/img-公共/icon_login.png" /></div>
+        </div>
+    </header>
+	<div id="front-fix">
+		<img src="img/img-关于我们/zixun.png">
+	</div>
+	<div id="consult_windows">
+		<div id="consult_title">
+			<p id="consult_title_word">一诺检测</p>
+			<img id="min_widows" src="img/img-预约检测/最小化.png" />
+			<img id="close_windows" src="img/img-公共/close.png" />
+		</div>
+		<div id="consult_text">
+			<div class="user_message">
+				<img class="user_avatar" src="img/img-公共/user.png"/>
+				<img class="user_text_dhk" src="img/img-预约检测/dhk.png" />
+				<div class="user_message_text">底盘检测吗？怎么检测的？</div>
+			</div>
+			<div class="robot_message">
+				<img class="robot_avatar" src="img/img-预约检测/jqr.png"/>
+				<img class="robot_text_bdhk" src="img/img-预约检测/bdhk.png" />
+				<div class="robot_message_text">底盘是检测的，技师会通过手机在汽车底部拍照的方式来进行底盘检测。</div>
+			</div>
+		
+		</div>
+		<div id="consult_send">
+			<img id="send_file" src="img/img-公共/wbcl.png" />
+			<textarea id="send_text" class="form-control"></textarea>
+			<button id="send_button" class="btn">发送</button>
+		</div>
+	</div>
+    <main>
+        <section class="sec1">
+            <iframe name="if1" src="html/ifr1.html" frameborder="0"></iframe>
+        </section>
+        <section class="sec2">
+            <div class="form_box wow slideInRight">
+                <div class="button_box">
+                    <div id="btn"></div>
+                    <button class="toggle_btn" id="btn1"><a href="html/ifr1.html" target="if1"
+                            class="if_tab">车辆检测</a><br></button>
+                    <button class="toggle_btn" id="btn2"><a href="html/ifr2.html" target="if1"
+                            class="if_tab">陪同看车</a><br></button>
+                </div>
+
+               <!-- <form class="input_group" id="form1"> -->
+				<div class="input_group" id="form1">
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/time.png"/>
+						<input class="form-control all_line" id="input1_line1"  placeholder="预约时间（两周之内，9:00-18:00)"/>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/input_car.png"/>
+						<input class="form-control line2_left" id="input1_line2_text1"  placeholder="品牌" />
+						<input class="form-control line2_right" id="input1_line2_text2"  placeholder="车型"/>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/input_user.png"/>
+						<input class="form-control line3_left"  placeholder="您的姓名" id="input1_line3"/>
+						<!-- <input class="form-control line3_right"  placeholder="性别"/> -->
+						<select class="form-control line3_right">
+							<option value='' disabled selected style='display:none;color: #9CA7B3;'>性别</option> 
+							<option>男</option>
+							<option>女</option>
+						</select>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/地点.png"/>
+						<!-- <input class="form-control line4_left"  placeholder="省份"/> -->
+						<select class="form-control line4_left">
+							<option value='' disabled selected style='display:none;color: gray;'>省份</option> 
+							<option>四川</option>
+							<option>北京</option>
+							<option>上海</option>
+							<option>湖北</option>
+							<option>辽宁</option>
+							<option>黑龙江</option>
+						</select>
+						<!-- <input class="form-control line4_mid"  placeholder="城市"/> -->
+						<select class="form-control line4_mid">
+							<option value='' disabled selected style='display:none;color: gray;'>城市</option> 
+							<option>成都</option>
+							<option>上海市</option>
+							<option>绵阳</option>
+							<option>武汉</option>
+							<option>杭州</option>
+						</select>
+						<!-- <input class="form-control line4_right"  placeholder="地区"/> -->
+						<select class="form-control line4_right ">
+							<option value='' disabled selected style='display:none;color: gray;'>地区</option> 
+							<option>双流区</option>
+							<option>青阳区</option>
+							<option>金牛区</option>
+							<option>武侯区</option>
+							<option>郫县</option>
+						</select>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/地点.png"/>
+						<input class="form-control all_line" id="input1_line4" placeholder="输入预约检测地址"/>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/phone.png"/>
+						<input class="form-control all_line" id="input1_line5" placeholder="请输入您的手机号"/>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/code.png"/>
+						<input class="form-control code_left" id="input1_line6" placeholder="请输入验证码"/>
+						<img class="img_code" src="img/img-预约检测/yzm.png" />
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/code.png"/>
+						<input class="form-control code_left" id="input1_line7"  placeholder="请输入短信验证码"/>
+						<button class="btn message_code">获取短信验证码</button>
+					</div>
+					<div class="check_input checkbox" >
+						<label style="margin-top: 5px;"><input type="checkbox" id="input1_line8" name="111"> 我同意<a>“一诺检测”</a>服务协议 </label>
+					</div>
+					<div class="check_input" style="margin-bottom: 0px;">
+						<h3 style="margin-top: 0px;"><p class="special_word">420 </p>元/次/车</h3>
+					</div>
+					<!-- <div class="check_sumbit"> </div> -->
+					<button type="submit" class="btn input_sumbit" id="input1_submit">提交预约</button>
+					
+					
+                </div>
+                <div class="input_group" id="form2">
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/time.png"/>
+						<input class="form-control all_line" id="input2_line1"  placeholder="预约时间（两周之内，9:00-18:00)"/>
+					</div>
+					<!-- <div class="check_input">
+						<img class="input_icon" src="img/img-预约检测/input_car.png"/>
+						<input class="form-control line2_left" id="input2_line2_text1"  placeholder="品牌" />
+						<input class="form-control line2_right" id="input2_line2_text2"  placeholder="车型"/>
+					</div> -->
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/input_user.png"/>
+						<input class="form-control line3_left"  placeholder="您的姓名" id="input2_line3"/>
+						<!-- <input class="form-control line3_right"  placeholder="性别"/> -->
+						<select class="form-control line3_right">
+							<option value='' disabled selected style='display:none;color: #9CA7B3;'>性别</option> 
+							<option>男</option>
+							<option>女</option>
+						</select>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/地点.png"/>
+						<!-- <input class="form-control line4_left"  placeholder="省份"/> -->
+						<select class="form-control line4_left">
+							<option value='' disabled selected style='display:none;color: gray;'>省份</option> 
+							<option>四川</option>
+							<option>北京</option>
+							<option>上海</option>
+							<option>湖北</option>
+							<option>辽宁</option>
+							<option>黑龙江</option>
+						</select>
+						<!-- <input class="form-control line4_mid"  placeholder="城市"/> -->
+						<select class="form-control line4_mid">
+							<option value='' disabled selected style='display:none;color: gray;'>城市</option> 
+							<option>成都</option>
+							<option>上海市</option>
+							<option>绵阳</option>
+							<option>武汉</option>
+							<option>杭州</option>
+						</select>
+						<!-- <input class="form-control line4_right"  placeholder="地区"/> -->
+						<select class="form-control line4_right ">
+							<option value='' disabled selected style='display:none;color: gray;'>地区</option> 
+							<option>双流区</option>
+							<option>青阳区</option>
+							<option>金牛区</option>
+							<option>武侯区</option>
+							<option>郫县</option>
+						</select>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/地点.png"/>
+						<input class="form-control all_line" id="input2_line4" placeholder="输入预约检测地址"/>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/phone.png"/>
+						<input class="form-control all_line" id="input2_line5" placeholder="请输入您的手机号"/>
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/code.png"/>
+						<input class="form-control code_left" id="input2_line6" placeholder="请输入验证码"/>
+						<img class="img_code" src="img/img-预约检测/yzm.png" />
+					</div>
+					<div class="check_input">
+						<!-- <i class="input_icon"></i> -->
+						<img class="input_icon" src="img/img-预约检测/code.png"/>
+						<input class="form-control code_left" id="input2_line7"  placeholder="请输入短信验证码"/>
+						<button class="btn message_code">获取短信验证码</button>
+					</div>
+					<div class="check_input checkbox" >
+						<label style="margin-top: 5px;"><input type="checkbox" id="input2_line8"> 我同意<a>“一诺检测”</a>服务协议 </label>
+					</div>
+					<div class="check_input" style="margin-bottom: 0px;">
+						<h3 style="margin-top: 0px;"><p class="special_word">600 </p>元/3小时</h3>
+					</div>
+					<div class="check_sumbit"><button class="btn input_sumbit " id="input2_submit">提交预约</button> </div>
+                </div>
+            </div>
+        </section>
+       <!-- <section class="sec3">
+            <ul>
+                <div class="image1">
+                </div>
+                <li class="li1">独立第三方</li>
+                <div class="image2">
+                </div>
+                <li class="li2">国家标准</li>
+                <div class="image3">
+                </div>
+                <li class="li3">专业技师</li>
+                <div class="image4">
+                </div>
+                <li class="li4">上门检测</li>
+            </ul>
+        </section> -->
+    </main>
+    <div id="container">
+		<!-- 底部导航栏 -->
+		
+		<div id="foot-intro">
+			<div class="intro-tag wow rotateInDownLeft">
+				<a href="#" class="hvr-icon-spin">
+					<div class="circle cir1 hvr-icon"></div>
+				</a>
+				<p>独立三方</p>
+			</div>
+			<div class="intro-tag wow rotateInDownLeft">
+				<a href="#" class="hvr-icon-spin">
+					<div class="circle cir2 hvr-icon"></div>
+				</a>
+				<p>国家标准</p>
+			</div>
+			<div class="intro-tag wow rotateInDownLeft">
+				<a href="#" class="hvr-icon-spin">
+					<div class="circle cir3 hvr-icon"></div>
+				</a>
+				<p>专业技师</p>
+			</div>
+			<div class="intro-tag wow rotateInDownLeft">
+				<a href="#" class="hvr-icon-spin">
+					<div class="circle cir4 hvr-icon"></div>
+				</a>
+				<p>上门检测</p>
+			</div>
+		</div>
+		<div id="footer" class="wow fadeInUp">
+			<div class="info">
+				<div class="infolist">
+					<div id="info-guard" class="wow bounceInLeft">
+						<p class="foot-title size4">服务保障</p>
+						<p>——</p>
+						<a href="#"><p class="hvr-color">服务介绍</p></a>
+						<a href="#"><p class="hvr-color">服务流程</p></a>
+					</div>
+					<div id="info-check" class="wow bounceInLeft">
+						<p class="foot-title size4">检测套餐</p>
+						<p>——</p>
+						<a href="#"><p class="hvr-color">预约检测</p></a>
+					</div>
+					<div id="info-about" class="wow bounceInLeft">
+						<p class="foot-title size4">关于一诺</p>
+						<p>——</p>
+						<a href="#"><p class="hvr-color">关于我们</p></a>
+						<a href="#"><p class="hvr-color">加入我们</p></a>
+						<a href="#"><p class="hvr-color">联系我们</p></a>
+					</div>
+				</div>
+				<div class="infolist">
+					<div class="wow bounceInUp">
+						<p class="foot-title size4">联系我们</p>
+						<p>——</p>
+						<div id="phone-line">
+							<div class="foot-icon phone">
+								<img id="icon_contact" src="img/img-关于我们/icon_contact.png">电话
+							</div>
+							<div class="foot-iconinfo font2 size4">
+								<p id="num">400-777-7777</p>
+								<p id="time">时间：9:30-18:00</p>
+							</div>							
+						</div>							
+						<hr />
+						<div id="mail-line">
+							<div class="foot-icon mail">
+								<img id="icon_mail" src="img/img-关于我们/icon_mail.png">邮箱
+							</div>
+							<div class="foot-iconinfo font2 size4">
+								<p id="addr">inno@neusoft.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="infolist">
+					<div class="wow bounceInRight">
+						<p class="foot-title size4">关注我们</p>
+						<p>——</p>
+						<img class="hvr-grow code" src="img/img-关于我们/code.jpg">
+					</div>
+				</div>					
+			</div>
+			<hr id="hr-style1"/>
+			<div id="bottom">
+				<p>版权所有 Copyright @2016 neusoft 保留所有版权</p>
+			</div>
+		</div>
+    </div>
+
+</body>
+
+</html>

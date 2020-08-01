@@ -1,0 +1,154 @@
+
+#index_title{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	top: 0;
+	border-bottom: 1px solid #DFDFDF;
+	background-color: #fff;
+	z-index: 999;
+	/* margin-bottom: 100px; */
+}
+
+#title_logo{
+	position:absolute;
+	width: 150px;
+	height: 50px;
+	left: 2%;
+	top:15px;
+}
+
+#title_logo img{
+	width: 100%;
+	height: 100%;
+}
+
+#top-nav{
+	position:absolute;
+	left: 15%;
+	/* border: 1px solid blue; */
+	
+}
+#top-nav ul li{
+	display:inline-block;
+	float:left;
+	/* margin-bottom: 20px; */
+}
+#top-nav ul li a{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	/* color: #000000; */
+	margin-top: 10px;
+	padding: 15px 25px;
+	display: block;
+	position: relative;
+	text-decoration:none;
+	text-transform: uppercase;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	/* font-size: 1.2em; */
+	position:relative;
+}
+
+#wechat_logo{
+	position:absolute;
+	width: 25px;
+	height: 20px;
+	right: 420px;
+	top:30px;
+}
+
+#wechat_logo img{
+	width: 100%;
+	height: 100%;
+}
+
+#wechat_QRCode{
+	position: absolute;
+	top:50px;
+	left: -70px;
+	width: 200px;
+	height: 200px;
+	z-index: 999;
+	display: none;
+}
+
+#title_phonenumber{
+	position:absolute;
+	width: 250px;
+	height: 80px;
+	right: 120px;
+	top:0px;
+	border-left: 1px solid #DFDFDF;
+	text-align: center;
+}
+
+#title_phonenumber img{
+	width: 80%;
+	height: 100%;
+}
+
+#title_login{
+	position:absolute;
+	width: 80px;
+	height: 80px;
+	right: 0;
+	/* border: 1px solid blue; */
+	background-color: #0F6BB0;
+	text-align: center;
+}
+
+#title_login img{
+	position: relative;
+	top:25%;
+	width: 40%;
+	height: 40%;
+}
+
+#front-fix{
+	position: fixed;
+	top: 80%;
+	right: 0.75%;
+	z-index: 999;
+}
+#front-fix img{
+	width: 150px;
+}
+
+#top-nav a,#top-nav a:visited {
+  text-decoration: none;
+  position: relative;
+  /* color: #069; */
+}
+
+#top-nav a:after,#top-nav a:visited:after {
+  content: '';
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 0%;
+  background: #069;
+  transition: 0.2s;
+}
+#top-nav a:hover:after,#top-nav a:visited:hover:after {
+  width: 70%;
+}
+#top-nav a.block,#top-nav a:visited.block {
+  display: block;
+  padding: 0.5em;
+}
+#top-nav a.block:hover,#top-nav a:visited.block:hover {
+  background: #eee;
+}
+
+.active a,.active a:visited {
+  color: #000000;
+  /* color: #069; */
+}
+
+.no_active a,.no_active a:visited {
+  color: #069;
+  /* color: #069; */
+}

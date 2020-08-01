@@ -1,0 +1,73 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+section.test_title {
+  text-align: center;
+  position: relative;
+  line-height: 7vh;
+}
+
+section.test_title h1 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+section.test_title h1 #hSpan {
+  font-weight: 180;
+}
+
+section.test_title hr {
+  width: 60px;
+  margin: 0 auto;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  margin-left: 120px;
+}
+
+ul li div:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.image1 {
+  width: 88px;
+  height: 88px;
+  background: url(../img/img-预约检测/icon.png) 0px 0px no-repeat;
+}
+
+.image2 {
+  width: 88px;
+  height: 88px;
+  background: url(../img/img-预约检测/icon.png) -88px 0px no-repeat;
+}
+
+.image3 {
+  width: 88px;
+  height: 88px;
+  background: url(../img/img-预约检测/icon.png) -176px 0px no-repeat;
+}
+
+.pic {
+  position: absolute;
+  left: 250px;
+  margin-top: 100px;
+}
+
+.pic img {
+  width: 50%;
+  height: 50%;
+}
+/*# sourceMappingURL=ifr2.css.map */

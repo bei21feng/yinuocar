@@ -1,0 +1,293 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "sec1 sec2" 90vh "sec3 sec3" 10vh/1fr 1fr;
+  /* margin-top: 80px; */
+}
+
+section.sec1 {
+  grid-area: sec1;
+  padding-left: 20%;
+  padding-top: 3%;
+  margin-top: 80px;
+}
+
+.sec1{
+	position: relative;
+	right: 0%;
+}
+
+section.sec2 {
+  grid-area: sec2;
+  margin-top: 80px;
+}
+
+section.sec2 .form_box {
+  height: 660px;
+  width: 400px;
+  position: relative;
+  /* margin: 10% auto; */
+  margin-top: 10%;
+  left: 30%;
+  border: 1px solid lightgray;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.button_box {
+  width: 400px;
+  margin: 0 30px 0 0;
+  position: relative;
+}
+
+.toggle_btn {
+  width: 195px;
+  padding: 10px 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+
+
+a.if_tab {
+  color: gray;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+a.if_tab:hover {
+  text-decoration: none;
+}
+
+#btn1 a{
+	color: #fff;
+}
+
+#btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #0f6bb0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 0;
+  padding: 0;
+}
+
+.input_group {
+  position: absolute;
+  top: 70px;
+  width: 340px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  /* border: 1px solid red; */
+}
+
+.check_input{
+	position: relative;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+/* .input_icon{
+	position: absolute;
+	background: url(../img/img-预约检测/time.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	top: 2px;
+	left: 10px;
+} */
+
+.input_icon{
+	position: absolute;
+	/* background: url(../img/img-预约检测/time.png) no-repeat; */
+	width: 30px;
+	height: 30px;
+	top: 2px;
+	left: 10px;
+	/* z-index: -1; */
+}
+
+
+.all_line{
+	padding-left: 50px;
+}
+
+.line2_left{
+	width: 165px;
+	float: left;
+	margin-right: 10px;
+	padding-left: 50px;
+}
+
+.line2_right{
+	width: 165px;
+	float: left;
+	padding-left: 20px;
+}
+
+.line3_left{
+	width: 200px;
+	float: left;
+	margin-right: 10px;
+	padding-left: 50px;
+}
+
+.line3_right{
+	width: 130px;
+	float: left;
+	padding-left: 15px;
+}
+
+.line4_left{
+	width: 106px;
+	float: left;
+	margin-right: 10px;
+	padding-left: 40px;
+	z-index: 1;
+}
+
+.line4_mid{
+	width: 106px;
+	float: left;
+	margin-right: 10px;
+	padding-left: 10px;
+}
+
+.line4_right{
+	width: 107px;
+	float: left;
+	padding-left: 10px;
+}
+
+.img_code{
+	width: 120px;
+	/* height: 80%; */
+	float: left;
+	
+}
+
+.code_left{
+	width: 190px;
+	float: left;
+	margin-right: 10px;
+	padding-left: 50px;
+}
+
+.message_code{
+	width: 140px;
+	float: left;
+	background-color: #FEBF2C;
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.message_code:hover{
+	color: #FFFFFF;
+}
+
+.special_word{
+	display: inline;
+	font-size: 55px;
+	color: #0F6BAF;
+}
+
+.check_sumbit{
+	position: relative;
+	width: 100%;
+	
+}
+
+.input_sumbit{
+	width: 100%;
+	background-color: #0F6BAF;
+	color: #ffffff;
+	height: 50px;
+}
+
+.input_sumbit:hover{
+	color: #FFFFFF;
+}
+
+#form1 {
+  left: 25px;
+}
+
+#form2 {
+  left: 450px;
+}
+
+section.sec3 {
+  grid-area: sec3;
+}
+
+section.sec3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  /* justify-content: space-around; */
+  list-style: none;
+}
+
+.image1 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #0f6bb0;
+  margin-left: 100px;
+  /* margin-right: 20px; */
+  background: url(../img/img-公共/icon_foot.png) 0px 0px no-repeat;
+}
+
+.image2 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #0f6bb0;
+  background: url(../img/img-公共/icon_foot.png) 0px -56px no-repeat;
+}
+
+.image3 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #0f6bb0;
+  background: url(../img/img-公共/icon_foot.png) 0px -112px no-repeat;
+}
+
+.image4 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #0f6bb0;
+  background: url(../img/img-公共/icon_foot.png) 0px -168px no-repeat;
+}
+
+section.sec3 li {
+  line-height: 10vh;
+  margin-right: 200px;
+}
+
+iframe {
+  height: 800px;
+  width: 800px;
+}
+
+#footer {
+  bottom: auto;
+}
+/*# sourceMappingURL=2.css.map */

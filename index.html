@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+		<link href="css/public_title.css" rel="stylesheet" />
+		<link href="css/index.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/style-font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public_footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index_animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/online_consult.css" />
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/unslider.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/public_title.js"></script>
+		<script type="text/javascript" src="js/online_consult.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<script src="js/wow.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</head>
+	<body>
+		
+		<div class="container-fluid">
+			
+			<div id="index_title">
+				<div id="title_logo"><img src="img\img-公共\logo.png" /></div>
+				<div id="top-nav">
+					<ul>
+						<li class="active"><a href="index.html">首页</a></li>
+						<li class="no_active"><a href="detection.html">预约检测</a></li>
+						<li class="no_active"><a href="organization.html">企业动态</a></li>
+						<li class="no_active"><a href="about_us.html">关于一诺</a></li>
+					</ul>
+				</div>
+				<div id="wechat_logo">
+					<img src="img/img-公共/icon_wechat.png" />
+					<div id="wechat_QRCode">
+						<img src="img/img-公共/code.jpg" />
+					</div>
+					</div>
+				<div id="title_phonenumber"><img src="img/img-公共/tel.png" /></div>
+				<div id="title_login"><img src="img/img-公共/icon_login.png" /></div>
+			</div>
+			
+			<!-- 初始轮播代码 -->
+			<!-- <div class="index_banner">
+				<div id="banner_container">
+					<img src="./img/img-首页/index_banner1.jpg" />
+					<img src="./img/img-首页/index_banner2.jpg" />
+					<img src="./img/img-首页/index_banner3.jpg" />
+				</div>
+				<div id="banner_left"><img src="img/img-首页/arrow_left.png" /> </div>
+				<div id="banner_right"><img src="img/img-首页/arrow_right.png" /> </div>
+			</div> -->
+			<div class="banner" id="b04">
+			    <ul class="banner_ul">
+					<!-- <li class="banner_li"><img class="banner_img" src="./img/img-首页/index_banner3.jpg" alt=""></li> -->
+			        <li class="banner_li"><img class="banner_img" src="./img/img-首页/index_banner1.jpg" alt=""></li>
+			        <li class="banner_li"><img class="banner_img" src="./img/img-首页/index_banner2.jpg" alt=""></li>
+			        <li class="banner_li"><img class="banner_img" src="./img/img-首页/index_banner3.jpg" alt=""></li>
+					<!-- <li class="banner_li"><img class="banner_img" src="./img/img-首页/index_banner1.jpg" alt=""></li> -->
+			        <!-- <li><img src="04.jpg" alt="" width="640" height="480" ></li>
+			        <li><img src="05.jpg" alt="" width="640" height="480" ></li> -->
+			    </ul>
+			    <a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="img/img-首页/arrow_left.png" alt="prev" width="20" height="35"></a>
+			    <a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="img/img-首页/arrow_right.png" alt="next" width="20" height="37"></a>
+			</div>
+			
+			<div id="front-fix">
+				<img src="img/img-关于我们/zixun.png">
+			</div>
+			<div id="consult_windows">
+				<div id="consult_title">
+					<p id="consult_title_word">一诺检测</p>
+					<img id="min_widows" src="img/img-预约检测/最小化.png" />
+					<img id="close_windows" src="img/img-公共/close.png" />
+				</div>
+				<div id="consult_text">
+					<div class="user_message">
+						<img class="user_avatar" src="img/img-公共/user.png"/>
+						<img class="user_text_dhk" src="img/img-预约检测/dhk.png" />
+						<div class="user_message_text">底盘检测吗？怎么检测的？</div>
+					</div>
+					<div class="robot_message">
+						<img class="robot_avatar" src="img/img-预约检测/jqr.png"/>
+						<img class="robot_text_bdhk" src="img/img-预约检测/bdhk.png" />
+						<div class="robot_message_text">底盘是检测的，技师会通过手机在汽车底部拍照的方式来进行底盘检测。</div>
+					</div>
+				
+				</div>
+				<div id="consult_send">
+					<img id="send_file" src="img/img-公共/wbcl.png" />
+					<textarea id="send_text" class="form-control"></textarea>
+					<button id="send_button" class="btn">发送</button>
+				</div>
+			</div>
+			<div class="display_container">
+				<div class="display_mid wow bounceInLeft" id="pict1"><img class="display_img hover_scale" src="img/img-首页/img1.jpg" /> </div>
+				<div class="display_small wow bounceInUp" id="word1">
+					<div id="word1_text1">
+						<div class="word1_text1_child" id="word1_text1_logo">
+							<div class="text_logo" id="wt1_logo">
+								<img id="logo_horse" src="img/img-首页/icon_horse.png" />
+								<img class="logo_circle" id="horse_circle" src="img/img-首页/circle.png" />
+							</div>
+							<img id="triangle1" src="img/img-首页/triangle1.png" />		
+						</div>
+						<div class="word1_text1_child" id="word1_text1_text">
+							<div class="text_container">
+								<div class="word_container">
+									<p class="index_font1">INNO</p>
+									<p class="index_font2 font_bold">Detecting</p>
+									<p class="index_font2 font_bold">——</p>
+									<p class="index_font2">关于一诺</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="word1_text2">
+						<div class="text_container text_center">
+							<img src="img/img-首页/icon_tel.png" />
+							<div class="word_container">
+								<p class="index_font2 " style="margin-top: 7%;">Access phone</p>
+								<p class="index_font2">访问手机</p>
+							</div>
+						</div>
+						<img id="word1_text2_BF" src="img/img-公共/code.jpg" />
+					</div>
+					<div id="word1_text3">
+						<div class="text_container text_center">
+							<img src="img/img-首页/icon_contact.png" />
+							<div class="word_container">
+								<p class="index_font2 " style="margin-top: 7%;">Contact us</p>
+								<p class="index_font2">联系我们</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="display_small wow bounceInRight" id="word2">
+					<div id="word2_border"></div>
+					<div class="text_container text_center">
+						<div class="word2_logo">
+							<img id="file_logo" src="img/img-首页/icon_file.png" />
+							<img class="logo_circle" id="word2_circle" src="img/img-首页/circle.png" />
+						</div>
+						
+						<div class="word_container">
+							<p class="index_font1 " style="margin-top: 7%;">DETECTION</p>
+							<p class="index_font3">order</p>
+							<p class="index_font3">——</p>
+							<p class="index_font3">预约检测</p>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="display_small" id="word3"></div>
+				
+				<div class="display_small_img" id="pict2"><img src="img/img-首页/img2.jpg"/> </div> -->
+				<div class="display_large wow bounceInDown" id="left_bottom">
+					<div class="display_small" id="word3">
+						<img class="text_bg" src="img/img-首页/bg1.png" />
+						<div class="text3_container">
+							<div class="word_container">
+								<p class="index_font1 " style="margin-top: 7%;">DETECTION OF</p>
+								<p class="index_font3">package</p>
+								<p class="index_font3">——</p>
+								<p class="index_font3">检测套餐</p>
+							</div>
+							<div class="word_logo_container">
+								<img  class="word_logo" src="img/img-首页/arrow.png" />
+								<img class="word_circle logo_circle" src="img/img-首页/circle.png" />
+							</div>
+						</div>
+						<img id="triangle2" src="img/img-首页/triangle2.png"/>
+					</div>
+					<div class="display_small" id="pict2"><img class="display_img hover_scale" src="img/img-首页/img2.jpg" /> </div>
+					<div class="display_mid" id="pict3">
+						<div>
+							<img class="car_move" src="img/img-首页/car.png" />
+						</div>
+						<div id="prct3__text">
+							<div class="text3_container">
+								<div class="word_container">
+									<p class="index_font4 font_bold" style="margin-top: 7%;">——</p>
+									<p class="index_font4 font_bold" style="margin-bottom: 7%;">值得信赖的二手车检测专家</p>
+									<p class="index_font5">TRUSTWORTHY USED CAR</p>
+									<p class="index_font5">DETECTION EXPERTS</p>
+								</div>
+								<!-- <div class="word_logo_container">
+									<img  class="word_logo" src="img/img-首页/arrow.png" />
+									<img class="word_circle logo_circle" src="img/img-首页/circle.png" />
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="display_large wow bounceInUp" id="pict4">
+					<img class="display_img hover_scale" src="img/img-首页/img3.jpg" />
+					<div id="pict4_text">
+						<img class="text_bg" src="img/img-首页/bg1.png" />
+						<div class="text3_container">
+							<div class="word_container">
+								<p class="index_font1 " style="margin-top: 7%;">DETECTION SERVICE</p>
+								<p class="index_font3">process</p>
+								<p class="index_font3">——</p>
+								<p class="index_font3">服务流程</p>
+							</div>
+							<div class="word_logo_container">
+								<img  class="word_logo" src="img/img-首页/arrow.png" />
+								<img class="word_circle logo_circle" src="img/img-首页/circle.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="sq_det_container wow slideInDown">
+				<div id="sq_word">
+					<h1>SPECIAL</h1>
+					<h2>quality<br />detections </h2>
+					<p>————</p>
+					<h3>专项质量检测</h3>
+					<h4 style="margin-top: 30px;"><p class="special_word">229 </p>项质量检测排查四大类车况，全面检测车况，提供专业质量检测报告</h4>
+				</div>
+				<div id="sq_pict">
+					<div class="sqDet_pict_display" id="sqDet_pictDisplay1">
+						<img id="sqDet_img1" src="img/img-首页/sq_det_pict_01.png" />
+						<!-- <div class="img_border" id="img_border1"></div> -->
+						<div class="img_border">
+							<img src="img/img-首页/no.png" >
+						</div>
+						<p>事故车</p>
+					</div>
+					<div class="sqDet_pict_display" id="sqDet_pictDisplay2">
+						<img id="sqDet_img2" src="img/img-首页/sq_det_pict_02.png" />
+						<!-- <div class="img_border" id="img_border2"></div> -->
+						<div class="img_border">
+							<img src="img/img-首页/no.png" >
+						</div>
+						<p>泡水车</p>
+					</div>
+					<div class="sqDet_pict_display" id="sqDet_pictDisplay3">
+						<img id="sqDet_img3" src="img/img-首页/sq_det_pict_03.png" />
+						<!-- <div class="img_border" id="img_border3"></div> -->
+						<div class="img_border">
+							<img src="img/img-首页/no.png" >
+						</div>
+						<p>火烧车</p>
+					</div>
+					<div class="sqDet_pict_display" id="sqDet_pictDisplay4">
+						<img id="sqDet_img4" src="img/img-首页/sq_det_pict_04.png" />
+						<!-- <div class="img_border" id="img_border4"></div> -->
+						<div class="img_border">
+							<img src="img/img-首页/no.png" >
+						</div>
+						<p>问题车</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="innodetecting_container wow slideInUp">
+				<div id="sq_word">
+					<h1>innodetecting</h1>
+					<h1>仿站</h1>
+					<h3>————</h3>
+					<h3>制作团队 </h3>
+					
+					<h4 style="margin-top: 30px;"><p class="special_word">（伪）精英级 </p>开发工程师随时待命</h4>
+				</div>
+				
+				<div class="us_img_container">
+					
+					<div class="one_img_container hover_scale" id="one1" >
+						<img class="us_img" id="one1_img" src="img/img-us/zcy.jpg" />
+						<h4 style="margin-top: 30px;">zcy <p class="hide_word">(的老婆)</p></h4>
+					</div>
+					
+					<div class="one_img_container hover_scale" id="one2" >
+						<img class="us_img" id="one2_img" src="img/img-us/wyx.jpg" />
+						<h4 style="margin-top: 30px;">王宇轩</h4>
+					</div>
+					
+					<div class="one_img_container hover_scale" id="one3" >
+						<img class="us_img" id="one3_img" src="img/img-us/lqy.jpg" />
+						<h4 style="margin-top: 30px;">刘巧韵</h4>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			<!-- 底部导航栏 -->
+			
+			<div id="foot-intro">
+				<div class="intro-tag wow rotateInDownLeft">
+					<a href="#" class="hvr-icon-spin">
+						<div class="circle cir1 hvr-icon"></div>
+					</a>
+					<p>独立三方</p>
+				</div>
+				<div class="intro-tag wow rotateInDownLeft">
+					<a href="#" class="hvr-icon-spin">
+						<div class="circle cir2 hvr-icon"></div>
+					</a>
+					<p>国家标准</p>
+				</div>
+				<div class="intro-tag wow rotateInDownLeft">
+					<a href="#" class="hvr-icon-spin">
+						<div class="circle cir3 hvr-icon"></div>
+					</a>
+					<p>专业技师</p>
+				</div>
+				<div class="intro-tag wow rotateInDownLeft">
+					<a href="#" class="hvr-icon-spin">
+						<div class="circle cir4 hvr-icon"></div>
+					</a>
+					<p>上门检测</p>
+				</div>
+			</div>
+			<div id="footer" class="wow fadeInUp">
+				<div class="info">
+					<div class="infolist">
+						<div id="info-guard" class="wow bounceInLeft">
+							<p class="foot-title size4">服务保障</p>
+							<p>——</p>
+							<a href="#"><p class="hvr-color">服务介绍</p></a>
+							<a href="#"><p class="hvr-color">服务流程</p></a>
+						</div>
+						<div id="info-check" class="wow bounceInLeft">
+							<p class="foot-title size4">检测套餐</p>
+							<p>——</p>
+							<a href="#"><p class="hvr-color">预约检测</p></a>
+						</div>
+						<div id="info-about" class="wow bounceInLeft">
+							<p class="foot-title size4">关于一诺</p>
+							<p>——</p>
+							<a href="#"><p class="hvr-color">关于我们</p></a>
+							<a href="#"><p class="hvr-color">加入我们</p></a>
+							<a href="#"><p class="hvr-color">联系我们</p></a>
+						</div>
+					</div>
+					<div class="infolist">
+						<div class="wow bounceInUp">
+							<p class="foot-title size4">联系我们</p>
+							<p>——</p>
+							<div id="phone-line">
+								<div class="foot-icon phone">
+									<img id="icon_contact" src="img/img-关于我们/icon_contact.png">电话
+								</div>
+								<div class="foot-iconinfo font2 size4">
+									<p id="num">400-777-7777</p>
+									<p id="time">时间：9:30-18:00</p>
+								</div>							
+							</div>							
+							<hr />
+							<div id="mail-line">
+								<div class="foot-icon mail">
+									<img id="icon_mail" src="img/img-关于我们/icon_mail.png">邮箱
+								</div>
+								<div class="foot-iconinfo font2 size4">
+									<p id="addr">inno@neusoft.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="infolist">
+						<div class="wow bounceInRight">
+							<p class="foot-title size4">关注我们</p>
+							<p>——</p>
+							<img class="hvr-grow code" src="img/img-关于我们/code.jpg">
+						</div>
+					</div>					
+				</div>
+				<hr id="hr-style1"/>
+				<div id="bottom">
+					<p>版权所有 Copyright @2016 neusoft 保留所有版权</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
